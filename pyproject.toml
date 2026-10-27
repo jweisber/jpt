@@ -1,0 +1,9 @@
+[project]
+name = "jpt"
+version = "0.1.0"
+description = "Implement a small transformer language model in numpy, using pretrained weights"
+requires-python = ">=3.10"
+dependencies = [
+    "jupyterlab>=4",
+    "numpy>=1.24",
+]
