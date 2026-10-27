@@ -2,7 +2,7 @@
 
 A project for learning how a transformer works by building one yourself.
 
-JPT is a small language model that writes text in the style of Plato's dialogues, badly. It's already trained: `weights.npz` contains all the weights. What's missing is the code that uses those weights to generate text. You write that code using just NumPy until the model writes its own (sort of) Platonic dialogue:
+JPT is a small language model that writes text in the style of Plato's dialogues, badly. It's already trained: `weights.npz` contains all the weights. What's missing is the code that uses those weights to generate text. You write that code using NumPy, until the model writes its own (sort of) Platonic dialogue:
 
 ```
 MENO:
@@ -14,7 +14,7 @@ And is this wise, like fathers or brothers? ...
 
 ## What you'll do
 
-The notebook `jpt.ipynb` contains the outline of the model. Follow the step-by-step instructions in [exercises.md](exercises.md) to fill in each cell, except the first and last ones. The first cell loads the vocabulary and the weights; the last asks the model to continue a prompt. Once you fill in all the cells in between, run the notebook from top to bottom and the last cell will generate new text using your code.
+The notebook `jpt.ipynb` contains the outline of the model. Follow the step-by-step instructions in [exercises.md](exercises.md) to fill in each cell, except the first and last ones. The first cell loads the vocabulary and the weights; the last one asks the model to continue a prompt. Once you fill in all the cells in between, run the notebook from top to bottom and the last cell will generate new text using your code.
 
 ## Files
 
