@@ -14,21 +14,19 @@ And is this wise, like fathers or brothers? ...
 
 ## What you'll do
 
-The notebook `jpt.ipynb` contains the outline of the model. Follow the step-by-step instructions in [exercises.md](exercises.md) to fill in each cell, except the first and last ones. The first cell loads the vocabulary and the weights; the last one asks the model to continue a prompt. Once you fill in all the cells in between, run the notebook from top to bottom and the last cell will generate new text using your code.
+The notebook `jpt.ipynb` contains the outline of the model. Follow the step-by-step instructions in the notebook to fill in the missing functions. The first code cell loads the vocabulary and the weights; the last one asks the model to continue a prompt. Under each function you fill in is a test cell, with the expected output in a comment, so you can check your work as you go. Once all the functions are filled in, run the notebook from top to bottom and the last cell will generate new text using your code.
 
 ## Files
 
 | File | What it is |
 |---|---|
-| `exercises.md` | Step-by-step instructions for filling in the notebook |
 | `jpt.ipynb` | The notebook where you write your code |
 | `weights.npz` | The trained model's weights, in numpy format |
 | `plato.txt` | The text of Plato's dialogues. The model's vocabulary is the set of characters in this file. |
-| `pyproject.toml`, `uv.lock` | Python package requirements (numpy and JupyterLab) |
 
 ## About the model
 
-JPT reads and writes one character at a time. Its vocabulary is the 77 characters that appear in `plato.txt`: letters, digits, punctuation, spaces and newlines.
+JPT reads and writes one character at a time. Its vocabulary is the 77 characters that appear in `plato.txt`: letters, most digits, punctuation, spaces and newlines.
 
 | | |
 |---|---|
@@ -39,3 +37,7 @@ JPT reads and writes one character at a time. Its vocabulary is the 77 character
 | Parameters | about 10.8 million |
 
 It was trained in two stages: first on about 200 MB of philosophy and classics from [Project Gutenberg](https://www.gutenberg.org), to learn English, then on Plato's dialogues alone, to learn to sound like Plato.
+
+## Shout Out
+
+This project is inspired by [Andrej Karpathy's YouTube tutorial](https://www.youtube.com/watch?v=kCc8FmEb1nY). If you want to learn to train your own model, that tutorial is an excellent followup project.
