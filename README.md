@@ -1,4 +1,4 @@
-# Jowett Plato-Trained (JPT) Language Model
+# Jowett Plato-trained Transformer (JPT)
 
 A project for learning how a transformer works by building one yourself.
 
